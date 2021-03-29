@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.20">
+    <root id="1">
+      <ServerVersion>4.4.4</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="flask"/>
+    <schema id="5" parent="1" name="local"/>
+    <table id="6" parent="4" name="book"/>
+    <table id="7" parent="4" name="read"/>
+    <table id="8" parent="4" name="save_user"/>
+    <table id="9" parent="4" name="user"/>
+    <column id="10" parent="7" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="11" parent="7" name="user_name">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="12" parent="7" name="book_name">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="13" parent="8" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="14" parent="8" name="hobbies">
+      <DataType>list(0)|4999545s</DataType>
+    </column>
+    <column id="15" parent="8" name="password">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="16" parent="8" name="hobbies.name">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="17" parent="8" name="register_datetime">
+      <Position>1</Position>
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="18" parent="8" name="hobbies.time">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="19" parent="8" name="relatives">
+      <Position>2</Position>
+      <DataType>map(0)|4999544s</DataType>
+    </column>
+    <column id="20" parent="8" name="name">
+      <Position>3</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="21" parent="8" name="relatives.father">
+      <Position>3</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="22" parent="8" name="relatives.mother">
+      <Position>4</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="23" parent="8" name="relatives.sister">
+      <Position>5</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="24" parent="9" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="25" parent="9" name="email">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="26" parent="9" name="name">
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
